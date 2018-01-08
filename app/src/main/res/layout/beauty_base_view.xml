@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bulbaseview_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/parent_content_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_layout">
+
+        <LinearLayout
+            android:id="@+id/dpdev_baseview_user_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:background="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="1dp">
+
+            <ImageView
+                android:id="@+id/menu_img_home"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:padding="2dp"
+                android:src="@drawable/home"
+                tools:ignore="ContentDescription"/>
+
+            <ImageView
+                android:id="@+id/menu_img_favorite"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:padding="4dp"
+                android:src="@drawable/favorite"
+                tools:ignore="ContentDescription"/>
+
+            <ImageView
+                android:id="@+id/menu_img_profile"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:src="@drawable/profile"
+                tools:ignore="ContentDescription"/>
+
+            <ImageView
+                android:id="@+id/menu_img_settings"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:padding="4dp"
+                android:src="@drawable/settings"
+                tools:ignore="ContentDescription"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorDistance">
+        </View>
+
+    </FrameLayout>
+</RelativeLayout>
